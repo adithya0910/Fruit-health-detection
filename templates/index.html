@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/fruits-82524.jpg" type="">
+    <title>Fruit Health and Fruit Recognition System</title>
+    <link rel="stylesheet" href="/static/style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>HELLO, WELCOME TO FRUITS HEALTH ANALYSIS</h1>
+            <p>click &nbsp; <strong>Let's get started</strong> &nbsp; to resume your journey</p>
+        </div>
+         <button type="submit" class="btn" onclick="openpopup()">Let's get started &rarr;</button>
+        <div class="popup" id="popupid">
+            <img src="/static/logofruit.jpg" alt="loading image">
+            <h2>Fruit in a day is a healthier way </h2>
+            <p>Meet your consultant  <i>Mr.PHALA</i> &nbsp; he is specialist in checking quality of your fruits. </p>  
+            <a href="/submit" target="_blank"><button  type="button">Discover more</button></a>
+            
+        </div>
+    </div>
+    <script>
+        let popupid=document.getElementById("popupid");
+        function openpopup()
+        {
+            popupid.classList.add("open-popup");
+        }
+        
+    </script>
+</body>
+</html>
